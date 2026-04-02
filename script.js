@@ -9,6 +9,18 @@ images.forEach((_, i) => {
   dot.addEventListener("click", () => showSlide(i));
   dotsContainer.appendChild(dot);
 });
+const specialLink = document.querySelector('a[href="#specialMoment"]');
+const specialBox = document.getElementById("specialMoment");
+
+if (specialLink && specialBox) {
+  specialLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    specialBox.style.display =
+      specialBox.style.display === "block" ? "none" : "block";
+
+    specialBox.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+}
 const btn = document.querySelector(".gallery-btn");
 const menu = document.querySelector(".dropdown-content");
 
