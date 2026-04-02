@@ -27,6 +27,40 @@ header p {
   font-size: 1.3em;
   font-style: italic;
 }
+.dropdown {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  min-width: 180px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .gallery-btn {
   position: absolute;
