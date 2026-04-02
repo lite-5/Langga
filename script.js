@@ -9,7 +9,13 @@ images.forEach((_, i) => {
   dot.addEventListener("click", () => showSlide(i));
   dotsContainer.appendChild(dot);
 });
+const btn = document.querySelector(".gallery-btn");
+const menu = document.querySelector(".dropdown-content");
 
+btn.addEventListener("click", () => {
+  menu.style.display =
+    menu.style.display === "block" ? "none" : "block";
+});
 function showSlide(index) {
   slideIndex = index;
   slides.style.transform = `translateX(${-index * 100}%)`;
