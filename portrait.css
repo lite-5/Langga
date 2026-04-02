@@ -12,7 +12,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background: url(d.jpg) no-repeat center;
+    background: url(image/d.jpg) no-repeat center;
     background-attachment: fixed;
     background-clip: text;
     -webkit-background-clip: text;
