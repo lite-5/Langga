@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Our Anniversary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="2nd.css">
+</head>
+<body class="locked">
+<div class="lock" id="lock">
+  <form id="lockForm">
+    <h2>Just for us</h2>
+    <p>Type the date we started to open this.</p>
+    <input id="pin" type="text" autocomplete="off" aria-label="Anniversary date" placeholder="MM/DD/YYYY">
+    <button class="b" type="submit">Open</button>
+    <p id="err" class="note" role="alert"></p>
+  </form>
+</div>
+<main>
+  <h1>Happy Anniversary, <em>Langgaaa</em></h1>
+  <p class="date" style="margin-bottom:22px">October 25, 2024 &mdash; the day we began</p>
+  <p style="text-align:center;margin:0 0 48px">
+    <button class="b" id="surpriseBtn" type="button">
+      <img src="image2nd/1.jpg" alt="" onerror="this.remove()">
+      Tap for a surprise
+    </button>
+  </p>
+
+  <section style="margin-top:0">
+    <h2>Time we’ve had together</h2>
+    <div class="clock" aria-live="off">
+      <div><b id="y">0</b><span>years</span></div>
+      <div><b id="mo">0</b><span>months</span></div>
+      <div><b id="d">0</b><span>days</span></div>
+      <div><b id="h">0</b><span>hours</span></div>
+      <div><b id="m">0</b><span>minutes</span></div>
+      <div><b id="s">0</b><span>seconds</span></div>
+    </div>
+    <p class="total" id="total"></p>
+  </section>
+
+  <section>
+    <h2>I love youuu</h2>
+    <div class="essay" id="essay">
+      <p>
+        Like the sun that wakes the morning bright,<br>
+        And the moon that warms the velvet night,<br>
+        Though worlds apart in time and space,<br>
+        You are the light I long to trace.
+      </p>
+      <p>
+        Through every season, turn, and year,<br>
+        The path we walk grows ever clear;<br>
+        You rule my day, you grace my dark,<br>
+        A steady flame, a timeless spark.
+      </p>
+      <p>
+        So here’s to time we’ve left behind,<br>
+        And every orbit yet to find<br>
+        My golden sun, my silver moon,<br>
+        With you, my heart is always home.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our moments</h2>
+    <p class="note" style="margin:0 0 16px">Tap a heart Langga to open it.</p>
+    <div class="grid" id="grid">
+
+      <!-- Memory 1: photo is image2nd/1.jpg, edit the message in data-message -->
+      <button class="tile" type="button" data-message="Write a message for this memory here. Tell me what this moment means to you.">
+        <span class="h">💗</span>
+        <small>Memory 1</small>
+        <img src="image2nd/1.jpg" alt="Memory 1" onerror="this.remove()">
+      </button>
+
+      <!-- Memory 2: photo is image2nd/2.jpg -->
+      <button class="tile" type="button" data-message="Another memory, another message. Tell me what you remember most.">
+        <span class="h">💗</span>
+        <small>Memory 2</small>
+        <img src="image2nd/2.jpg" alt="Memory 2" onerror="this.remove()">
+      </button>
+
+      <!-- Memory 3: photo is image2nd/3.jpg -->
+      <button class="tile" type="button" data-message="Something small you love about us goes here.">
+        <span class="h">💗</span>
+        <small>Memory 3</small>
+        <img src="image2nd/3.jpg" alt="Memory 3" onerror="this.remove()">
+      </button>
+
+      <!-- Memory 4: photo is image2nd/4.jpg -->
+      <button class="tile" type="button" data-message="A message about what you’re looking forward to next.">
+        <span class="h">💗</span>
+        <small>Memory 4</small>
+        <img src="image2nd/4.jpg" alt="Memory 4" onerror="this.remove()">
+      </button>
+
+      <!-- Memory 5: photo is image2nd/5.jpg -->
+      <button class="tile" type="button" data-message="A thank-you for something only you two know about.">
+        <span class="h">💗</span>
+        <small>Memory 5</small>
+        <img src="image2nd/5.jpg" alt="Memory 5" onerror="this.remove()">
+      </button>
+
+      <!-- Memory 6: photo is image2nd/6.jpg -->
+      <button class="tile" type="button" data-message="Write another message for this memory here.">
+        <span class="h">💗</span>
+        <small>Memory 6</small>
+        <img src="image2nd/6.jpg" alt="Memory 6" onerror="this.remove()">
+      </button>
+
+      <!-- Memory 7: photo is image2nd/7.jpg -->
+      <button class="tile" type="button" data-message="Write another message for this memory here.">
+        <span class="h">💗</span>
+        <small>Memory 7</small>
+        <img src="image2nd/7.jpg" alt="Memory 7" onerror="this.remove()">
+      </button>
+
+      <!-- Memory 8: photo is image2nd/8.jpg -->
+      <button class="tile" type="button" data-message="The last note: I love you, and I always will.">
+        <span class="h">💗</span>
+        <small>Memory 8</small>
+        <img src="image2nd/8.jpg" alt="Memory 8" onerror="this.remove()">
+      </button>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Songggg</h2>
+    <div class="music">
+      <!-- Song file: song.mp3 (same folder as this page) -->
+      <p id="songName">Press play to hear our song.</p>
+      <audio id="audio" controls src="song.mp3"></audio>
+    </div>
+  </section>
+
+  <footer>Made with love</footer>
+</main>
+
+<dialog id="dlg" aria-label="Memory">
+  <div id="pic" class="ph">💗</div>
+  <div class="dlg">
+    <p id="msg"></p>
+    <label for="cmt" class="note" style="display:block;margin:0 0 6px">Your comment</label>
+    <textarea id="cmt" rows="3" placeholder="Write a comment on this photo…"></textarea>
+    <div class="row">
+      <button class="b" id="close" type="button">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<div id="surprise" role="dialog" aria-label="Surprise" hidden>
+  <div class="card">
+    <!-- Surprise photo: image2nd/surprise.jpg -->
+    <div id="spic" class="ph">💗<img src="image2nd/1.jpg" alt="Surprise" onerror="this.remove()"></div>
+    <div class="dlg">
+      <p>Happy anniversary, Langgaaa mwapss mwappss. Ito lang po afforddd ko heheh hope you like it Iloveyouu mwaps mwapss.</p>
+      <button class="b" id="sclose" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<p>Tap mo po yung screen
+  
+</p>
+<script src="2nd.js"></script>
+</body>
+</html>
